@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Pocket Garage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="fuel_station_array">
+        <item>Hindustan Petrolium</item>
+        <item>Reliance</item>
+        <item>Indian Oil</item>
+        <item>Bharat Petrolium</item>
+    </string-array>
+
+
+    <string-array name="fuel_type_array">
+        <item>Petrol</item>
+        <item>Diesel</item>
+        <item>CNG</item>
+        <item>Gasoline</item>
+        <item>Electric</item>
+        <item>LPG</item>
+    </string-array>
+    <string name="title_activity_find_garage">Map</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

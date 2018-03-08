@@ -1,0 +1,211 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context="com.example.rutujabanswal.pocketgarage.Fuel">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!---
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Select Fuel Station"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_fuel_station"
+            android:entries="@array/fuel_station_array">
+        </Spinner>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Select Fuel Type"
+            android:textSize="17dp"/>
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_fuel_type"
+            android:entries="@array/fuel_type_array">
+        </Spinner>
+     -->
+        <TextView
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="Petrol Rate (INR)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc"/>
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:cardBackgroundColor=" #dcdcdc">
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/hp_logo"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp" />
+                <TextView
+                    android:id="@+id/petrol_1"
+                    android:text="Petrol 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/bharat"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp" />
+                    <TextView
+                        android:id="@+id/petrol_2"
+                        android:text="Petrol 2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/indian"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp" />
+                    <TextView
+                        android:id="@+id/petrol_3"
+                        android:text="Petrol 3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="Diesel Rate (INR)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:cardBackgroundColor=" #dcdcdc">
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/hp_logo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp" />
+                    <TextView
+                        android:id="@+id/diesel_1"
+                        android:text="Diesel 1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/bharat"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp" />
+                    <TextView
+                        android:id="@+id/diesel_2"
+                        android:text="Diesel 2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/indian"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp" />
+                    <TextView
+                        android:id="@+id/diesel_3"
+                        android:text="Diesel 3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>
