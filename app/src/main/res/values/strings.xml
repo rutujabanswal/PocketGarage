@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Pocket Garage</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -25,6 +25,52 @@
         <item>Electric</item>
         <item>LPG</item>
     </string-array>
+
+
+ <array name="manufacturer_array">
+     <item>Manufacturer </item>
+     <item>SUZUKI</item>
+     <item>BAJAJ</item>
+     <item>HERO HONDA</item>
+     <item>KAWASAKI</item>
+     <item>KTM</item>
+     <item>MAHINDRA</item>
+     <item>TVS</item>
+     <item>YAMAHA</item>
+ </array>
+
+
+    <array name="model_array">
+        <item>Vechical Manufacturer </item>
+        <item>SUZUKI</item>
+        <item>BAJAJ</item>
+        <item>HERO HONDA</item>
+        <item>KAWASAKI</item>
+        <item>KTM</item>
+        <item>MAHINDRA</item>
+        <item>TVS</item>
+        <item>YAMAHA</item>
+    </array>
+
+    <array name="service_type_array">
+        <item>Service Type</item>
+        <item>Flat Tyre-Type</item>
+        <item>Electric Problem Bike</item>
+        <item>Regular Service</item>
+        <item>Break Down Assistance-bike</item>
+        <item>Accident Assistance-bike</item>
+        <item>Towing Help-bike</item>
+        <item>Washing and Cleaning-bike</item>
+        <item>Bike Designer</item>
+        <item>Denting and painting</item>
+        <item>Insurance</item>
+        <item>New Battery-bike</item>
+    </array>
+
+
+
+
     <string name="title_activity_find_garage">Map</string>
     <string name="title_activity_maps">Map</string>
+
 </resources>

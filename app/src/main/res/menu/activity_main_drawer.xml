@@ -9,15 +9,15 @@
             android:icon="@drawable/fuel"
             android:title="Fuel" />
 
-        <item
-            android:id="@+id/nav_garage_near_me"
-            android:icon="@drawable/fuel"
-            android:title="Find Garage" />
 
         <item
             android:id="@+id/nav_find_nearby_garage"
             android:icon="@drawable/fuel"
-            android:title="Find Garage new" />
+            android:title="Find Garage " />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/fuel"
+            android:title="Services" />
 
 
     </group>

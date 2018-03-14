@@ -12,7 +12,24 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.rutujabanswal.pocketgarage.MapsActivity" />
+        tools:context="com.example.rutujabanswal.pocketgarage.MapsActivity"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/linearlayout1"
+            android:orientation="vertical">
+    <Button
+        android:id="@+id/btnFuelStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nearby Gas Stations" />
+            <Button
+                android:id="@+id/btnCarRepair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby Car Repair" />
 
+
+        </LinearLayout>
 
 </FrameLayout>
