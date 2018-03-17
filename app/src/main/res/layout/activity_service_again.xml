@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rutujabanswal.pocketgarage.ServiceAgain">
+
+    <TextView
+        android:textColor="#000"
+        android:paddingTop="10dp"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vechical Details" />
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SERVICES"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Number"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/vechical_number"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Vechical Number"
+                android:tooltipText="Ve no" />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/vechical_manufacturer"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:entries="@array/manufacturer_array"
+            android:spinnerMode="dropdown"
+            android:text="Select Manufacturer">
+        </Spinner>
+        <Spinner
+            android:id="@+id/service_type"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:entries="@array/service_type_array"
+            android:spinnerMode="dropdown"
+            android:text="Select Manufacturer">
+        </Spinner>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Model"
+            android:textColor="#000"
+            android:textSize="12dp" />
+        <EditText
+            android:id="@+id/vechical_model"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Vechical Model" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Notes"
+            android:textColor="#000"
+            android:textSize="12dp" />
+        <EditText
+            android:id="@+id/notes"
+            android:padding="20dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="Notes" />
+    </LinearLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+    </LinearLayout>
+-->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Number"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/vechical_number"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tooltipText="Ve no" />
+        <TextView
+            android:id="@+id/spinner_manufacturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Manufacturer"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <Spinner
+            android:id="@+id/vechical_manufacturer"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:entries="@array/manufacturer_array"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/spinner_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Service"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <Spinner
+            android:id="@+id/service_type"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:entries="@array/service_type_array"
+            android:spinnerMode="dropdown"
+            android:text="Select Manufacturer"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Model"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/vechical_model"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Notes"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/notes"
+            android:padding="15dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </GridLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+</LinearLayout>
