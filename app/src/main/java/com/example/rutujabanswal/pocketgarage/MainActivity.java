@@ -1,6 +1,7 @@
 package com.example.rutujabanswal.pocketgarage;
 
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -106,14 +107,23 @@ public class MainActivity extends AppCompatActivity
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.frameLayoutMain,findNearbyGarage).commit();
         }
-
-        else if (id == R.id.nav_services) {
+        else if (id == R.id.nav_find_nearby_garage) {
             // Handle the camera action
-            Toast.makeText(getApplicationContext(),"Services Fragment Selected",Toast.LENGTH_SHORT).show();
-            GarageServices services = new GarageServices();
-            FragmentManager fragmentManager = getFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.frameLayoutMain,services).commit();
+            Toast.makeText(getApplicationContext(),"Garage Fragment Selected",Toast.LENGTH_SHORT).show();
+            FindNearbyGarage findNearbyGarage = new FindNearbyGarage();
+            android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.frameLayoutMain,findNearbyGarage).commit();
         }
+
+        else if (id == R.id.nav_servicesagain) {
+            // Handle the camera action
+            Toast.makeText(getApplicationContext(), "Service Fragment Selected", Toast.LENGTH_SHORT).show();
+            ServiceAgain again = new ServiceAgain();
+            startActivity(new Intent(getBaseContext(),ServiceAgain.class));
+            //   FragmentManager fragmentManager = getFragmentManager();
+           // fragmentManager.beginTransaction().replace(R.id.frameLayoutMain,again).commit();
+        }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

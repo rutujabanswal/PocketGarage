@@ -27,21 +27,21 @@
     </string-array>
 
 
- <array name="manufacturer_array">
-     <item>Manufacturer </item>
-     <item>SUZUKI</item>
-     <item>BAJAJ</item>
-     <item>HERO HONDA</item>
-     <item>KAWASAKI</item>
-     <item>KTM</item>
-     <item>MAHINDRA</item>
-     <item>TVS</item>
-     <item>YAMAHA</item>
- </array>
+    <array name="manufacturer_array">
+        <item>Manufacturer</item>
+        <item>SUZUKI</item>
+        <item>BAJAJ</item>
+        <item>HERO HONDA</item>
+        <item>KAWASAKI</item>
+        <item>KTM</item>
+        <item>MAHINDRA</item>
+        <item>TVS</item>
+        <item>YAMAHA</item>
+    </array>
 
 
     <array name="model_array">
-        <item>Vechical Manufacturer </item>
+        <item>Vechical Manufacturer</item>
         <item>SUZUKI</item>
         <item>BAJAJ</item>
         <item>HERO HONDA</item>
@@ -66,8 +66,6 @@
         <item>Insurance</item>
         <item>New Battery-bike</item>
     </array>
-
-
 
 
     <string name="title_activity_find_garage">Map</string>
