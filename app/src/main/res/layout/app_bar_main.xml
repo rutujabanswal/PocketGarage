@@ -22,12 +22,50 @@
 
     <include layout="@layout/content_main" />
 
+    <RelativeLayout
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fab3"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/service" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_below="@id/fab3"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/expenses" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_below="@id/fab2"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/fuel_again" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_below="@id/fab1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/add" />
+
+    </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

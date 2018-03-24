@@ -3,6 +3,7 @@ package com.example.rutujabanswal.pocketgarage;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -11,14 +12,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
-
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+ //    private FloatingActionMenu fam;
+ //  private FloatingActionButton fabEdit, fabDelete, fabAdd;
+ //private FloatingActionButton fabService, fabExpense,fabRefueling;
+    FloatingActionButton fabService, fabExpense,fabRefueling,fam;
+    boolean isOpened= false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +41,46 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-     //First of all, we will check if Google Play Services available or not in onCreate() function of MainActivity.java.
+        //First of all, we will check if Google Play Services available or not in onCreate() function of MainActivity.java.
         CheckGooglePlayServices();
+        ///
+         fam = (FloatingActionButton)findViewById(R.id.fab);
+         fabService = (FloatingActionButton)findViewById(R.id.fab1);
+         fabRefueling = (FloatingActionButton)findViewById(R.id.fab2);
+         fabExpense = (FloatingActionButton)findViewById(R.id.fab3);
 
+         fam.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 if(!isOpened)
+                 {
+                     showFab();
+                 }
+                 else
+                 {
+                     closeFab();
+                 }
+             }
+         });
+
+        ///
+    }
+
+    private void showFab() {
+        isOpened=true;
+        fabExpense.setVisibility(View.VISIBLE);
+        fabRefueling.setVisibility(View.VISIBLE);
+        fabService.setVisibility(View.VISIBLE);
+        fabExpense.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
+        fabRefueling.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
+        fabService.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
+    }
+
+    private void closeFab(){
+        isOpened=false;
+        fabService.animate().translationY(0);
+        fabRefueling.animate().translationY(0);
+        fabExpense.animate().translationY(0);
     }
 
     private boolean CheckGooglePlayServices() {

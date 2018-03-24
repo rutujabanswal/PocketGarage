@@ -1,4 +1,4 @@
-package com.example.rutujabanswal.pocketgarage;
+package com.example.rutujabanswal.pocketgarage.location;
 
 import android.util.Log;
 

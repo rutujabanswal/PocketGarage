@@ -1,35 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.rutujabanswal.pocketgarage.FindNearbyGarage">
 
     <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/linearlayout1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFuelStation"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:text="Fuel Stations"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnCarRepair"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/roundedbutton"
+            android:text="Car Repair"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map1"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.rutujabanswal.pocketgarage.MapsActivity"/>
-        <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:id="@+id/linearlayout1"
-            android:orientation="vertical">
-    <Button
-        android:id="@+id/btnFuelStation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nearby Gas Stations" />
-            <Button
-                android:id="@+id/btnCarRepair"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nearby Car Repair" />
-
-
-        </LinearLayout>
-
-</FrameLayout>
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:context="com.example.rutujabanswal.pocketgarage.MapsActivity" />
+    </LinearLayout>
+</LinearLayout>
