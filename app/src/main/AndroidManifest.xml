@@ -39,10 +39,9 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".FindGarage"
-            android:label="@string/title_activity_find_garage" />
-        <activity android:name=".ServiceAgain"></activity>
+        <activity android:name=".Model.ServiceAgain" />
+        <activity android:name=".Model.Profile" />
+        <activity android:name=".Model.Expenses"></activity>
     </application>
 
 </manifest>

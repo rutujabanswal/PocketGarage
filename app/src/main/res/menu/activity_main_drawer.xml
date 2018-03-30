@@ -4,6 +4,12 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/fuel"
+            android:title="Profile" />
+
         <item
             android:id="@+id/nav_fuel"
             android:icon="@drawable/fuel"
@@ -13,13 +19,17 @@
         <item
             android:id="@+id/nav_find_nearby_garage"
             android:icon="@drawable/fuel"
-            android:title="Find Garage " />
+            android:title="Garage " />
 
         <item
             android:id="@+id/nav_servicesagain"
             android:icon="@drawable/fuel"
             android:title="Services" />
 
+        <item
+            android:id="@+id/nav_expenses"
+            android:icon="@drawable/fuel"
+            android:title="Expenses" />
 
     </group>
 

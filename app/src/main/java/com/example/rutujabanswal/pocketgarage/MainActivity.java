@@ -13,8 +13,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
+import com.example.rutujabanswal.pocketgarage.Model.Expenses;
+import com.example.rutujabanswal.pocketgarage.Model.FindNearbyGarage;
+import com.example.rutujabanswal.pocketgarage.Model.Fuel;
+import com.example.rutujabanswal.pocketgarage.Model.Profile;
+import com.example.rutujabanswal.pocketgarage.Model.ServiceAgain;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 public class MainActivity extends AppCompatActivity
@@ -63,6 +70,29 @@ public class MainActivity extends AppCompatActivity
              }
          });
 
+         fabRefueling.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 startActivity(new Intent(getBaseContext(),Fuel.class));
+             }
+         });
+
+         fabService.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 startActivity(new Intent(getBaseContext(),ServiceAgain.class));
+             }
+         });
+
+         fabExpense.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 startActivity(new Intent(getBaseContext(),Expenses.class));
+             }
+         });
+
+
+
         ///
     }
 
@@ -71,13 +101,20 @@ public class MainActivity extends AppCompatActivity
         fabExpense.setVisibility(View.VISIBLE);
         fabRefueling.setVisibility(View.VISIBLE);
         fabService.setVisibility(View.VISIBLE);
-        fabExpense.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
-        fabRefueling.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
-        fabService.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
+        final Animation animation = AnimationUtils.loadAnimation(this,R.anim.fab_scale_up);
+        fabService.startAnimation(animation);
+        fabRefueling.startAnimation(animation);
+        fabExpense.startAnimation(animation);
+//        fabExpense.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
+//        fabRefueling.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
+//        fabService.animate().translationY(-getResources().getDimension(R.dimen.fab_size_normal));
     }
 
     private void closeFab(){
         isOpened=false;
+        fabExpense.setVisibility(View.GONE);
+        fabRefueling.setVisibility(View.GONE);
+        fabService.setVisibility(View.GONE);
         fabService.animate().translationY(0);
         fabRefueling.animate().translationY(0);
         fabExpense.animate().translationY(0);
@@ -166,6 +203,34 @@ public class MainActivity extends AppCompatActivity
             //   FragmentManager fragmentManager = getFragmentManager();
            // fragmentManager.beginTransaction().replace(R.id.frameLayoutMain,again).commit();
         }
+
+        else if (id == R.id.nav_profile) {
+            // Handle the camera action
+            Toast.makeText(getApplicationContext(), "Profile Activity Selected", Toast.LENGTH_SHORT).show();
+            Profile profile = new Profile();
+            startActivity(new Intent(getBaseContext(),Profile.class));
+            //   FragmentManager fragmentManager = getFragmentManager();
+            // fragmentManager.beginTransaction().replace(R.id.frameLayoutMain,again).commit();
+        }
+
+        else if (id == R.id.nav_expenses) {
+            // Handle the camera action
+            Toast.makeText(getApplicationContext(), "Expenses Activity Selected", Toast.LENGTH_SHORT).show();
+            Expenses expenses = new Expenses();
+            startActivity(new Intent(getBaseContext(),Expenses.class));
+            //   FragmentManager fragmentManager = getFragmentManager();
+            // fragmentManager.beginTransaction().replace(R.id.frameLayoutMain,again).commit();
+        }
+
+        else if (id == R.id.nav_share) {
+            Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+            intent.setType("text/plain");
+            String shareBodyText = "Hey checkout this my app on github : https://play.google.com/store/apps/details?id=br.com.ctncardoso.ctncar&hl=en_IN";
+            intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject/Title");
+            intent.putExtra(android.content.Intent.EXTRA_TEXT, shareBodyText);
+            startActivity(Intent.createChooser(intent, "Choose sharing method"));
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

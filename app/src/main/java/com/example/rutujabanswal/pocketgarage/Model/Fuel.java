@@ -1,4 +1,4 @@
-package com.example.rutujabanswal.pocketgarage;
+package com.example.rutujabanswal.pocketgarage.Model;
 
 
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.example.rutujabanswal.pocketgarage.R;
 
 
 /**

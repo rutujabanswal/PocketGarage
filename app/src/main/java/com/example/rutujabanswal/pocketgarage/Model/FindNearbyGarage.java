@@ -1,4 +1,4 @@
-package com.example.rutujabanswal.pocketgarage;
+package com.example.rutujabanswal.pocketgarage.Model;
 
 
 import android.content.res.Configuration;
@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.rutujabanswal.pocketgarage.location.GetNearbyPlacesData;
+import com.example.rutujabanswal.pocketgarage.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

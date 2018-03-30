@@ -1,4 +1,4 @@
-package com.example.rutujabanswal.pocketgarage;
+package com.example.rutujabanswal.pocketgarage.Model;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.rutujabanswal.pocketgarage.R;
 
 public class ServiceAgain extends AppCompatActivity {
     private EditText vechical_number,vechical_model,notes;

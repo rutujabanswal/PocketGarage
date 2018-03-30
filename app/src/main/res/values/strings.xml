@@ -50,7 +50,23 @@
         <item>MAHINDRA</item>
         <item>TVS</item>
         <item>YAMAHA</item>
+        <item>Others</item>
     </array>
+
+    <array name="expenses_type_array">
+            <item>Car Wash</item>
+            <item>Finacing</item>
+            <item>Fine</item>
+            <item>parking</item>
+            <item>Payment</item>
+            <item>Registration</item>
+            <item>Reimbursement</item>
+            <item>Tax</item>
+            <item>Toll</item>
+            <item>Others</item>
+
+    </array>
+
 
     <array name="service_type_array">
         <item>Service Type</item>
@@ -65,11 +81,15 @@
         <item>Denting and painting</item>
         <item>Insurance</item>
         <item>New Battery-bike</item>
+        <item>Others</item>
     </array>
+
 
 
     <string name="title_activity_find_garage">Map</string>
     <string name="title_activity_maps">Map</string>
     <string name="logout">Logout</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
 
 </resources>

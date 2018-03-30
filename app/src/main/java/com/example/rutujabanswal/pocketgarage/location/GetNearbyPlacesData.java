@@ -1,9 +1,8 @@
-package com.example.rutujabanswal.pocketgarage;
+package com.example.rutujabanswal.pocketgarage.location;
 
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.example.rutujabanswal.pocketgarage.location.DataParser;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
