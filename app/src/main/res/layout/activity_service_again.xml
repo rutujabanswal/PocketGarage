@@ -119,6 +119,7 @@
     </LinearLayout>
 -->
     <GridLayout
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnCount="2"
@@ -132,7 +133,7 @@
             android:textSize="15dp" />
         <EditText
             android:id="@+id/vechical_number"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:tooltipText="Ve no" />
@@ -146,7 +147,7 @@
             android:textSize="15dp" />
         <Spinner
             android:id="@+id/vechical_manufacturer"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:entries="@array/manufacturer_array"
@@ -162,7 +163,7 @@
             android:textSize="15dp" />
         <Spinner
             android:id="@+id/service_type"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:entries="@array/service_type_array"
@@ -177,7 +178,7 @@
             android:textSize="15dp" />
         <EditText
             android:id="@+id/vechical_model"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_width="wrap_content"
@@ -189,7 +190,7 @@
         <EditText
             android:id="@+id/notes"
             android:padding="15dp"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine" />
 
